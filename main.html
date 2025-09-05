@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETAMU - AgriTech Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="intro-icon.png">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>PETAMU</h1>
+            <p>Exploring the Future of Farming and Technology</p>
+            <div class="lang-switcher">
+                <button data-lang="en" class="active">EN</button>
+                <span>|</span>
+                <button data-lang="id">ID</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="app-container">
+        <!-- Content will be dynamically injected here -->
+    </main>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="video-player-container">
+                <!-- YouTube iframe will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="sifma-info-modal" class="modal">
+        <div class="modal-content info-modal-content">
+            <span class="close-button" id="sifma-info-close">&times;</span>
+            <h3>About SifMA</h3>
+            <p><strong>SifMA (Smart Farming Monitor & Automasi)</strong> simulates an integrated smart farming system.</p>
+            <h4>Your Goal:</h4>
+            <p>Keep the environmental conditions within the optimal range to ensure the plant stays healthy (🌿).</p>
+            <h4>Parameters:</h4>
+            <ul>
+                <li><strong>Temperature:</strong> Ideal is 15-30°C.</li>
+                <li><strong>Air Humidity:</strong> Ideal is 40-70%.</li>
+                <li><strong>Soil Moisture:</strong> Ideal is 30-80%. Water when it gets low!</li>
+                <li><strong>Light:</strong> The system simulates a day/night cycle.</li>
+            </ul>
+            <h4>Controls:</h4>
+            <ul>
+                <li><strong>Manual Buttons:</strong> Directly turn the Sprinkler or Grow Light on/off.</li>
+                <li><strong>Auto Toggles:</strong> Let the system manage things for you.
+                    <ul>
+                        <li><strong>Auto Sprinkler:</strong> Turns on when soil is too dry.</li>
+                        <li><strong>Auto Light:</strong> Turns on when it gets dark.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Warnings will appear in the log when conditions are not optimal. Pay attention to them to save your plant!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PETAMU. All rights reserved. | <a href="#" id="about-link">About Us</a></p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
